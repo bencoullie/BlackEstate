@@ -4,16 +4,34 @@
 	<title>Black Estate</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" 
+		src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+		(function() {
+		   window.onload = function(){
+		   var latlng = new google.maps.LatLng(-43.039207, 172.812839);
+		   var options = {
+		      zoom: 13,
+		      center: latlng,
+		      mapTypeId: google.maps.MapTypeId.ROADMAP
+		        }; 
+		  var map = new google.maps.Map(document.getElementById('map'), options);
+		        }
+		    })();
+	</script>
+
 </head>
 <body>
 	<div id="toprow">
-
+		<div class="small-15 small-centered columns">
 			<div id="logo">
 				<a href="#"><img src="images/logo.png" alt="logo" id="logo"></a>
 			</div>
+		</div>
 	</div>
 	<div class="row">
-		<div class="small-15 small-centered columns">
+		<div class="small-15 small-centered columns nopad">
 			<hr>
 			<ul>
 				<a href="#" title=""><li><h1 class="navwords">Home</h1></li></a>
@@ -28,42 +46,159 @@
 				<div id="triangle"></div>
 			</div></a>
 		</div>
-		<div class="small-15 small-centered columns roundedboxwhite" id="topbox">
-			<p class="floatleft"><span class="spanheading">Heading One</span>
-			<br>
-			<br>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tortor enim, interdum pellentesque congue quis, fringilla vitae lacus. In at sodales arcu. Nulla id tortor quam.
-			<br>
-			<br>
-			<span class="spanprice">$25</span>
-			</p>
+	</div>
+	<div class="row">
+		<div class="small-4 small-centered columns">
+			<h1 id="centeredtext">. . .</h1>
+		</div>	
+	</div>
+	<div class="row">
+		<div class="small-15 small-centered columns roundedboxwhite table lbox" id="topbox">
+			<div class="cell">
+				<h1>Netherwood Rose 2013</h1>
+				<p>Pale ruby hue with a complex and crisp bouquet of plum, raspberry, tabacco. The palate is medium weight, crisp with refreshing plum stone, cranberry, blood orange flavours and lingering hints of sesame seed and tamarillo.</p>
+				<p>$28	</p>
+			</div>
+			<div class="cell bottle">
+				<img src="images/bottle.png">
+			</div>
 		</div>
-		<div class="small-15 small-centered columns roundedboxblack">
-			<p class="floatright"><span class="spanheading">Heading Two</span>
-			<br>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tortor enim, interdum pellentesque congue quis, fringilla vitae lacus. In at sodales arcu. Nulla id tortor quam.
-			<br>
-			<span class="spanprice">$25</span>
-			</p>
+	</div>
+	<div class="row">
+		<div class="small-15 small-centered columns roundedboxblack table rbox">
+			<div class="cell bottle">
+				<img src="images/bottle.png">
+			</div>
+			<div class="cell righttext thin">
+				<h1>Pinot Noir 2011</h1>
+				<p>Just released and tasting notes will follow. Fine, complex, with the hallmark Black Estate texture, spice, minerality and weight. True to the place.</p>
+				<p>$38</p>
+			</div>
 		</div>
-		<div class="small-15 small-centered columns roundedboxwhite">
-			<p class="floatleft"><span class="spanheading">Heading Three</span>
-			<br>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tortor enim, interdum pellentesque congue quis, fringilla vitae lacus. In at sodales arcu. Nulla id tortor quam.
-			<br>
-			<span class="spanprice">$25</span>
-			</p>
+	</div>
+	<div class="row">
+		<div class="small-15 small-centered columns roundedboxwhite table lbox">
+			<div class="cell">
+				<h1>Chardonnay 2012</h1>
+				<p>Fresh rich bouquet of lemon zest, ripe pineapple, ginger, and white freisa blossom.</p>
+				<p>$23</p>
+			</div>
+			<div class="cell bottle">
+				<img src="images/bottle.png">
+			</div>	
 		</div>
-		<div class="small-15 small-centered columns roundedboxblack" id="botbox">
-			<p class="floatright"><span class="spanheading">Heading One</span>
-			<br>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tortor enim, interdum pellentesque congue quis, fringilla vitae lacus. In at sodales arcu. Nulla id tortor quam.
-			<br>
-			<span class="spanprice">$25</span>
-			</p>
+	</div>
+	<div class="row">
+		<div class="small-15 small-centered columns roundedboxblack table rbox" id="botbox">
+			<div class="cell bottle">
+				<img src="images/bottle.png">
+			</div>
+			<div class="cell righttext thin">
+				<h1>Riesling 2012</h1>
+				<p>A bouquet of dark cherry, red forest fruits, spice, and fresh earth. Dense and structured, with substantial mouth feel and length of flavour.</p>
+				<p>$32</p>
+			</div>
+		</div>
+	</div>
+	<div class="row toppadding">
+		<div class="small-15 small-centered columns nopad">
+			<hr>
+			<h1 class="subheading">
+				Other Wines
+			</h1>
+			<hr>
 		</div>
 	</div>
 
+
+
+
+
+	<div class="row twohundred">
+		<div class="small-6 columns nopad">
+			<h5 class="subtexthead">
+				Pinot Noir 2011
+			</h5>
+			<p class="subtext">
+				A bouquet of dark cherry, red forest fruits, spice, and fresh earth. Dense and structured, with substantial mouth feel and length of flavour.
+			</p>
+			<p class="subtext">$22.00</p>
+		</div>
+		<div class="small-6 columns nopad">
+			<h5 class="subtexthead">
+				Pinot Noir 2011
+			</h5>
+			<p class="subtext">
+				A bouquet of dark cherry, red forest fruits, spice, and fresh earth. Dense and structured, with substantial mouth feel and length of flavour.
+			</p>
+			<p class="subtext">$30.00</p>
+		</div>
+	</div>
+
+	<div class="row twohundred">
+		<div class="small-6 columns nopad">
+			<h5 class="subtexthead">
+				Spye Omihi 2011
+			</h5>
+			<p class="subtext">
+				Deep ruby hue. A complex and dynamic bouquet with aromas of forest fruits, blueberry, violets, exotic spice, and chalk.
+			</p>
+			<p class="subtext">$26.00</p>
+		</div>
+		<div class="small-6 columns nopad">
+			<h5 class="subtexthead">
+				Spring Mixed Case
+			</h5>
+			<p class="subtext">
+				Four each of our current releases.
+			</p>
+			<p class="subtext">$350.00</p>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="row">
+		<div class="small-15 small-centered columns botpadding">
+			<hr>
+			<h1 class="subheading righttext">
+				Contact Details
+			</h1>
+			<hr>
+		</div>
+		<div id="map">
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-15 small-centered columns toppadding">
+			<hr>
+			<h1 class="subheading">
+				About Us
+			</h1>
+			<hr>
+		</div>
+	</div>
+	<div id="botrow">
+
+	</div>
+
+
+	<div class="row">
+		<div class="small-1 columns">1</div>
+		<div class="small-1 columns">2</div>
+		<div class="small-1 columns">3</div>
+		<div class="small-1 columns">4</div>
+		<div class="small-1 columns">5</div>
+		<div class="small-1 columns">6</div>
+		<div class="small-1 columns">7</div>
+		<div class="small-1 columns">8</div>
+		<div class="small-1 columns">9</div>
+		<div class="small-1 columns">10</div>
+		<div class="small-1 columns">11</div>
+		<div class="small-1 columns">12</div>
+	</div>
 
 </body>
 </html

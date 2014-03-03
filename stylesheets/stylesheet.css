@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1340,6 +1341,18 @@ a #logo:hover {
   background-image: url("../images/bgtop.png");
   width: 100%; }
 
+#botrow {
+  background-image: url("../images/bgtop.png");
+  width: 100%;
+  padding: 10px 0px 5px 0px;
+  height: 191px; }
+
+.lbox {
+  padding-left: 50px; }
+
+.rbox {
+  padding-right: 50px; }
+
 #circle:hover {
   background-color: rgba(255, 255, 255, 0.4); }
 
@@ -1371,46 +1384,105 @@ a #logo:hover {
   opacity: 0.8; }
 
 .roundedboxwhite {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   height: 250px;
-  margin-top: 100px;
+  margin-top: 120px;
   color: #121212; }
 
 .roundedboxblack {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   height: 250px;
   margin-top: 120px;
   color: white; }
 
 #botbox {
-  margin-bottom: 120px; }
+  margin-bottom: 150px; }
 
-.floatleft {
-  float: left;
-  width: 50%;
-  text-align: center;
+#topbox {
+  margin-top: 120px; }
+
+.hrpadding {
+  margin-bottom: 150px; }
+
+.subheading {
+  font-weight: 100;
+  font-size: 38px;
+  letter-spacing: 1px;
+  padding: 20px 0px 20px 0px;
+  margin: 0px; }
+
+.cell {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 16px; }
+  font-size: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative; }
+  .cell h1 {
+    color: #333333;
+    font-weight: 300; }
 
-.floatright {
-  float: right;
-  width: 50%;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 16px; }
+#map {
+  width: 90%;
+  height: 500px;
+  margin: 100px auto; }
 
-.spanheading {
-  font-weight: 700;
+.toppadding {
+  padding-bottom: 100px; }
+
+.botpadding {
+  padding-top: 100px; }
+
+.twohundred {
+  height: 20px; }
+
+.thin {
+  font-weight: 100; }
+
+.subtexthead {
+  font-weight: 100;
+  font-size: 28px;
+  letter-spacing: 1px;
+  padding: 20px 0px 20px 0px;
+  margin: 0px; }
+
+.subtext {
+  font-weight: 100;
+  font-size: 18px; }
+
+.righttext {
+  text-align: right; }
+  .righttext h1 {
+    color: #000;
+    font-weight: 300; }
+
+.cell img {
+  position: absolute;
+  top: -94px;
+  right: 108px;
+  height: 423px;
+  padding-left: 100px; }
+
+.table {
+  display: table; }
+
+.bottle {
+  width: 35%; }
+
+.nopad {
+  padding: 0px 3px; }
+
+h1 {
+  font-weight: 900;
   font-size: 20px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  letter-spacing: 3px; }
 
-.spanprice {
-  font-weight: 400;
-  font-size: 18px;
+h3 {
+  font-weight: 300;
+  font-size: 14px;
   padding-top: 10px; }
 
 hr {
@@ -1418,7 +1490,8 @@ hr {
   border-bottom: 1px dashed #000;
   background: transparent;
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  width: 100%; }
 
 #youtube {
   background: url("../images/woodyoutube.jpg");
@@ -1437,11 +1510,16 @@ hr {
   padding: 0px 0px 0px 0px;
   margin: 0px; }
 
+#centeredtext {
+  text-align: center;
+  font-size: 40px;
+  color: #222222; }
+
 li {
   list-style-type: none;
   display: inline-block;
   text-align: center;
-  padding: 5px 15px;
+  padding: 5px 5px;
   margin: 0px 20px; }
 
 a {
