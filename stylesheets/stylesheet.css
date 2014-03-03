@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1330,7 +1329,8 @@ body {
 
 #logo {
   text-align: center;
-  padding: 10px 0px 5px 0px; }
+  padding: 10px 0px 5px 0px;
+  padding: 10px 100px 5px 100px; }
 
 a #logo:hover {
   background: rgba(255, 255, 255, 0.4);
@@ -1340,6 +1340,79 @@ a #logo:hover {
   background-image: url("../images/bgtop.png");
   width: 100%; }
 
+#circle:hover {
+  background-color: rgba(255, 255, 255, 0.4); }
+
+#circle {
+  height: 150px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%; }
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-left: 50px solid white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 38%;
+  margin-top: 28%;
+  opacity: 0.8; }
+
+.roundedboxwhite {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  height: 250px;
+  margin-top: 100px;
+  color: #121212; }
+
+.roundedboxblack {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  height: 250px;
+  margin-top: 120px;
+  color: white; }
+
+#botbox {
+  margin-bottom: 120px; }
+
+.floatleft {
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+.floatright {
+  float: right;
+  width: 50%;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px; }
+
+.spanheading {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px; }
+
+.spanprice {
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 10px; }
+
 hr {
   border: 0;
   border-bottom: 1px dashed #000;
@@ -1348,12 +1421,14 @@ hr {
   margin: 0px; }
 
 #youtube {
-  background: url("../images/woodyoutube.png");
+  background: url("../images/woodyoutube.jpg");
   height: 570px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
-  border: none; }
+  border: none;
+  position: relative;
+  padding: 0px; }
 
 .navwords {
   font-family: 'Lato', sans-serif;
