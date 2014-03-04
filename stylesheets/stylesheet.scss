@@ -37,6 +37,10 @@ a #logo:hover {
 	height:191px;
 }
 
+.textcenter {
+	text-align: center;
+}
+
 .lbox {
 	padding-left:50px;
 }
@@ -131,9 +135,12 @@ a #logo:hover {
 }
 
 #map {
-	width: 90%;
-	height: 500px;
-	margin:100px auto;
+	width: 95%;
+	height: 450px;
+	margin:50px auto;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(50, 50, 50, 0.19);
+	-moz-box-shadow:    0px 0px 18px 0px rgba(50, 50, 50, 0.19);
+	box-shadow:         0px 0px 18px 0px rgba(50, 50, 50, 0.19);
 }
 
 .toppadding {
@@ -146,6 +153,34 @@ a #logo:hover {
 
 .twohundred {
 	height:20px;
+}
+
+.smallpad {
+	padding:100px 0px 60px 0px;
+}
+
+.imageblock1 {
+	height: 580px;
+	width: 785px;
+	background: url('../images/face.png');
+	margin: 0 auto 60px;
+	position: relative;
+}
+
+.imageblock2 {
+	height: 590px;
+	width: 791px;
+	background: url('../images/table.png');
+	margin: 0 auto 60px;
+	position: relative;
+}
+
+.imageblock3 {
+	height: 585px;
+	width: 791px;
+	background: url('../images/field.png');
+	margin: 0 auto 80px;
+	position: relative;
 }
 
 .thin {
@@ -193,6 +228,14 @@ a #logo:hover {
 
 .nopad {
 	padding: 0px 3px;
+
+	.marginnaught {
+		margin:12px;
+	}
+}
+
+.marginauto {
+	margin: 0 auto 100px;
 }
 
 h1 {
@@ -236,6 +279,27 @@ hr {
 	margin: 0px;
 }
 
+.textbubble {
+	font-weight: 100;
+	font-size: 15px;
+	letter-spacing: 1px;
+	width: 350px;
+	height: 160px;
+	color: white;
+	border-radius: 20px;
+	text-align: center;
+	padding: 6px;
+	display: table;
+	
+}
+
+.textbubble p {
+	vertical-align: middle;
+	display: table-cell;
+	height: 100%;
+	padding: 0px 5px 5px 5px;
+}
+
 #centeredtext {
 	text-align: center;
 	font-size: 40px;
@@ -265,8 +329,33 @@ a li:hover {
     transition:.3s;
 }
 
+.plspadtop {
+	padding-top: 50px
+}
+
 ul {
 	text-align: center;
 	padding: 0px;
     margin: 0px;
+}
+	
+#bub1 {
+	position: absolute;
+	top: 72%;
+	left: 53%;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#bub2 {
+	position: absolute;
+	top: 66%;
+	left: 13%;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+#bub3 {
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	background: rgba(0, 0, 0, 0.1);
 }
